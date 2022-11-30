@@ -2124,7 +2124,7 @@ def gef_execute_gdb_script(commands: str) -> None:
     return
 
 
-@deprecated("Use Elf(fname).checksec()")
+@deprecated("Use Elf(fname).checksec")
 def checksec(filename: str) -> Dict[str, bool]:
     return Elf(filename).checksec
 
